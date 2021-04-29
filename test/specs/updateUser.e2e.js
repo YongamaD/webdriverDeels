@@ -18,7 +18,7 @@ describe('My Login application', () => {
         await LoginPage.login(username, password);
         await SideMainMenu.setting()
         await UserSetting.accountSetting()
-        await UserSetting.editPersonal()
-
+        await UserSetting.updatePersonalInfo()
+        await UserSetting.clickSubmit()
     })
 })
